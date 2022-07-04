@@ -1,0 +1,6 @@
+create database jdbctestdb;
+use jdbctestdb;
+
+create table grope_tables (grope varchar(20) not null primary key, gropepass varchar(20) not null, leaderID varchar(20) not null );
+
+grant select,insert,update,delete,create on jdbctestdb.* to "tempuser"@"localhost" identified by "temppass";
